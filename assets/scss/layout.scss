@@ -5,12 +5,25 @@
 }
 
 .navbar{
-    background-color: red;
+    background-color: #1E2A3A;
+    color: white;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    &__title{
+        display: flex;
+
+        &__img{
+            width: 2rem;
+        }
+    }
 
     &__links{
         display: flex;
         text-decoration: none;
+        padding: 30px;
 
         &__link{
             text-decoration: none;
@@ -20,8 +33,16 @@
             a{
                 cursor: pointer;
                 text-decoration: none;
-                color: black;
+                color: white;
             }
         }
+    }
+
+    &__button{
+        background-color: #D4A574;
+        color: white;
+        padding: 20px;
+        border-radius: 5px;
+        border: none;
     }
 }

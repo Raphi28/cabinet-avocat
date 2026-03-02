@@ -5,12 +5,23 @@
 }
 
 .navbar {
-  background-color: red;
+  background-color: #1E2A3A;
+  color: white;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.navbar__title {
+  display: flex;
+}
+.navbar__title__img {
+  width: 2rem;
 }
 .navbar__links {
   display: flex;
   text-decoration: none;
+  padding: 30px;
 }
 .navbar__links__link {
   text-decoration: none;
@@ -20,7 +31,14 @@
 .navbar__links__link a {
   cursor: pointer;
   text-decoration: none;
-  color: black;
+  color: white;
+}
+.navbar__button {
+  background-color: #D4A574;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
