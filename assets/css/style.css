@@ -1,5 +1,83 @@
-.container {
-  background-color: red;
+.cards {
+  background-color: #F8F9FA;
+  gap: 2rem;
+}
+.cards__titre {
+  text-transform: uppercase;
+  color: #D4A574;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+.cards__question {
+  color: #212529;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.cards__response {
+  color: #6C757D;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+.cards__card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+}
+.cards__card__container {
+  background-color: #FFFFFF;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.cards__card__container:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+.cards__card__container__icone {
+  font-size: 2.5rem;
+  border-radius: 8px;
+  color: #FFFFFF;
+  background-color: #D4A574;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards__card__container__titre {
+  color: #1E2A3A;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+.cards__card__container__description {
+  color: #6C757D;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+.cards__card__container__lien {
+  margin-top: 2rem;
+}
+.cards__card__container__lien a {
+  color: #D4A574;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+.cards__card__container__lien a:hover {
+  color: #B8935F;
 }
 
 /*# sourceMappingURL=style.css.map */
