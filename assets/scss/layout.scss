@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: red;
+    display: flex;
+
+    &__links{
+        display: flex;
+        text-decoration: none;
+
+        &__link{
+            text-decoration: none;
+            list-style-type: none;
+            padding: 10px;
+
+            a{
+                cursor: pointer;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}

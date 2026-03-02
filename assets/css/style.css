@@ -1,5 +1,26 @@
-.container {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
   background-color: red;
+  display: flex;
+}
+.navbar__links {
+  display: flex;
+  text-decoration: none;
+}
+.navbar__links__link {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 10px;
+}
+.navbar__links__link a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
