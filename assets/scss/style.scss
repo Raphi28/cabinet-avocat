@@ -1,3 +1,41 @@
+@use 'variables';
+
 .container{
     background-color: red;
+}
+.card-list{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+
+.card-fonctionnement{
+    background-color: variables.$secondaire-light;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 150px;
+
+    &__image{
+        color: variables.$primaire;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+    }
+
+    &__titre{
+        font-family: variables.$font-primary;
+        color: variables.$color_white;
+        font-size: variables.$font-size-large;
+        margin-bottom: variables.$spacing-xs;
+    }
+
+    &__texte{
+        font-family: variables.$font-primary;
+        color: variables.$color-light;
+        font-size: 1rem;
+        color: variables.$color_gray;
+    }
+}
 }

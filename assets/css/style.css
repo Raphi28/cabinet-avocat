@@ -2,4 +2,36 @@
   background-color: red;
 }
 
+.card-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card-list .card-fonctionnement {
+  background-color: #2C3E50;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 150px;
+}
+.card-list .card-fonctionnement__image {
+  color: #D4A574;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+.card-list .card-fonctionnement__titre {
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+.card-list .card-fonctionnement__texte {
+  font-family: "Poppins", sans-serif;
+  color: #F8F9FA;
+  font-size: 1rem;
+  color: #6C757D;
+}
+
 /*# sourceMappingURL=style.css.map */
