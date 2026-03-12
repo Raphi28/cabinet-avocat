@@ -1,3 +1,4 @@
+@use "variables";
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,12 +9,16 @@
     background-color: #1E2A3A;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 2rem;
+    padding: 20px;
+    box-shadow: variables.$box-shadow;
 
     &__title{
         display: flex;
+        font-family: variables.$font-primary;
+        font-size: variables.$font-size-small;
+        gap: variables.$spacing-xs;
 
         &__img{
             width: 2rem;
@@ -24,16 +29,23 @@
         display: flex;
         text-decoration: none;
         padding: 30px;
+        gap: variables.$spacing-md;
 
         &__link{
             text-decoration: none;
             list-style-type: none;
             padding: 10px;
+            font-size: variables.$font-size-base;
 
             a{
                 cursor: pointer;
                 text-decoration: none;
-                color: white;
+                color: variables.$color_white;
+                font-family: variables.$font-primary;
+
+                &:hover{
+                    color: variables.$color-primary;
+                }
             }
         }
     }
@@ -46,3 +58,26 @@
         border: none;
     }
 }
+
+.conteneur{
+    align-items: center;
+    padding: 50px;
+    background-color: variables.$color-secondary-light;
+
+        &__titre{
+            font-family: variables.$font-secondary;
+            font-size: variables.$font-size-h1;
+            color: variables.$color-light;
+            margin-bottom: variables.$spacing-sm;
+        }
+
+        &__texte{
+            font-family: variables.$font-primary;
+            font-size: variables.$font-size-base;
+            color: variables.$color-gray;
+        }
+        span{
+            color: variables.$color-primary;
+            font-weight: bold;
+        }
+    }
